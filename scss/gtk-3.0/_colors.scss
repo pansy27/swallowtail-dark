@@ -1,0 +1,40 @@
+$surface-strongest: rgb(30, 30, 46);
+$surface-strong: rgb(40, 40, 61);
+$surface-moderate: rgb(40, 40, 67);
+$surface-weak: rgb(50, 50, 77);
+$surface-weakest: rgb(50, 50, 88);
+
+$white-strongest: rgb(255, 255, 255);
+$white-strong: rgba(255, 255, 255, 0.87);
+$white-moderate: rgba(255, 255, 255, 0.34);
+$white-weak: rgba(255, 255, 255, 0.14);
+$white-weakest: rgba(255, 255, 255, 0.06);
+
+$black-strongest: rgb(40, 40, 40);
+$black-strong: rgba(40, 40, 40, 40.87);
+$black-moderate: rgba(40, 40, 40, 0.42);
+$black-weak: rgba(40, 40, 40, 0.15);
+$black-weakest: rgba(40, 40, 40, 0.06);
+
+$red-normal: rgb(243, 139, 168);
+$red-light:rgb(246, 173, 194);
+$orange-normal: rgb(250, 179, 135);
+$orange-light: rgb(251, 201, 171);
+$yellow-normal: rgb(249, 226, 	175);
+$yellow-light: rgb(250, 231, 191);
+$green-normal: rgb(166, 227, 161);
+$green-light: rgb(192, 235, 189);
+$cyan-normal: rgb(148, 226, 213);
+$cyan-light: rgb(188, 237, 229);
+$blue-normal: rgb(148, 187, 250);
+$blue-light: rgb(197, 218, 252);
+$purple-normal: rgb(215, 179, 255);
+$purple-light: rgb(215, 179, 255);
+$pink-normal: rgb(228, 205, 255);
+$pink-light: rgb(248, 216, 239);
+
+$accent-primary: $purple-light;
+$accent-secondary: $green-normal;
+
+// TODO: is there a better way to do this? this is for example used in gnome-calculator for the result top-border
+@define-color borders #{"" +$surface-strong};

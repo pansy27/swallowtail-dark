@@ -1,0 +1,46 @@
+@use "../colors";
+@use "../config";
+
+dialog, messagedialog {
+  background: colors.$surface-strong;
+
+  .dialog-action-box {
+    background: colors.$surface-moderate;
+    padding: config.$spacing-medium;
+    margin: -0.4em;
+    margin-top: 0;
+  }
+
+  fontchooser, colorchooser {
+    padding: config.$spacing-medium;
+  }
+
+  filechooser {
+    & + .dialog-action-box {
+      margin: 0;
+    }
+
+    #pathbarbox {
+      padding: config.$spacing-small;
+      background: colors.$surface-moderate;
+    }
+  
+    treeview {
+      background: colors.$surface-strong;
+    }
+    viewport {
+      list {
+      background: colors.$surface-strong;
+    }
+  }
+  }
+button {
+      margin: 0em 0.3em 0.3em 0.3em;
+      border: none;
+      background: colors.$black-weakest;
+      transition: background 170ms ease-out;
+        &:hover:not(:active) {
+          background: colors.$black-weak;
+      }
+   }
+}

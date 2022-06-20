@@ -1,4 +1,5 @@
 @use '../colors';
+@use 'sass:color';
 @use '../config';
 
 list {
@@ -8,7 +9,8 @@ list {
     background: colors.$surface-strong;
     padding: config.$spacing-medium;
     &:hover {
-      background: colors.$surface-moderate;
+      background: color.change(colors.$accent-light, $alpha: config.$tint-medium);
+      color: #343434;
     }
   }
 

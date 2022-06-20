@@ -4,9 +4,10 @@
 menu {
   background: colors.$surface-weak;
   menuitem {
-    padding: config.$spacing-medium;
+    padding: config.$spacing-small;
     &:hover {
-      background: colors.$white-weakest;
+      background: colors.$yellow-normal;
+      color: colors.$black-strong;
     }
   }
 }

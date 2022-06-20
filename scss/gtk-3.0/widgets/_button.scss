@@ -5,17 +5,18 @@
 button {
   transition: background-color 100ms ease-in;
   background: colors.$white-weakest;
+  color: colors.$white-strong;
   padding: config.$spacing-medium;
   border-radius: config.$radius;
 
   &:hover:not(:active) { background: colors.$white-weak; }
-  &:disabled { opacity: config.$disabled-opacity; }
+  &:disabled { opacity: config.$disabled-button-opacity; }
 
   &:checked, &.suggested-action {
-    background: color.change(colors.$purple-normal, $alpha: config.$tint-medium);
+    background: color.change(colors.$accent-normal, $alpha: config.$tint-medium);
     color: colors.$white-strong;
     &:hover:not(:active) {
-      background: color.change(colors.$purple-light, $alpha: config.$tint-medium);
+      background: color.change(colors.$accent-light, $alpha: config.$tint-medium);
     }
   }
 

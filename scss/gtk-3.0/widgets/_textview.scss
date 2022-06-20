@@ -12,6 +12,6 @@ textview {
 
   selection {
     background: color.change(colors.$accent-primary, $alpha: config.$tint-medium);
-    color: colors.$white-strongest;
+    color: colors.$black-strongest;
   }
 }

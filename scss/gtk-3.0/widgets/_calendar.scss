@@ -20,7 +20,7 @@ calendar {
   }
 
   &:selected {
-    color: colors.$white-strongest;
+    color: colors.$black-strongest;
     border-radius: 0.5em;
     background: colors.$accent-primary;
   }

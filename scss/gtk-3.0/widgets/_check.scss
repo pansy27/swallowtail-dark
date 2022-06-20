@@ -3,7 +3,7 @@
 check {
   -gtk-icon-source: -gtk-recolor(url('../assets/symbolic/check.symbolic.png'));
   -gtk-icon-transform: scale(0);
-  color: colors.$white-strongest;
+  color: colors.$black-strongest;
   border: 0.2em solid colors.$white-weakest;
   border-radius: 0.3em;
   padding: 0.1em;

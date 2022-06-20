@@ -1,8 +1,8 @@
-$surface-strongest: rgb(30, 30, 46);
-$surface-strong: rgb(40, 40, 61);
-$surface-moderate: rgb(40, 40, 67);
-$surface-weak: rgb(50, 50, 77);
-$surface-weakest: rgb(50, 50, 88);
+$surface-strongest: rgb(38, 38, 38);
+$surface-strong: rgb(40, 40, 40);
+$surface-moderate: rgb(42, 42, 42);
+$surface-weak: rgb(44, 44, 44);
+$surface-weakest: rgb(46, 46, 46);
 
 $white-strongest: rgb(255, 255, 255);
 $white-strong: rgba(255, 255, 255, 0.87);
@@ -28,12 +28,12 @@ $cyan-normal: rgb(148, 226, 213);
 $cyan-light: rgb(188, 237, 229);
 $blue-normal: rgb(148, 187, 250);
 $blue-light: rgb(197, 218, 252);
-$purple-normal: rgb(215, 179, 255);
-$purple-light: rgb(215, 179, 255);
+$accent-normal: #e7a9a9;
+$accent-light: #f2d1d1;
 $pink-normal: rgb(228, 205, 255);
 $pink-light: rgb(248, 216, 239);
 
-$accent-primary: $purple-light;
+$accent-primary: $accent-normal;
 $accent-secondary: $green-normal;
 
 // TODO: is there a better way to do this? this is for example used in gnome-calculator for the result top-border

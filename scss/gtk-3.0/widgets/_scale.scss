@@ -6,7 +6,7 @@ scale {
   contents {
 
     trough {
-      background: colors.$surface-moderate;
+      background: colors.$white-weak;
       slider {
         background: lighten(colors.$surface-moderate, 25%);
         padding: 8px;
@@ -14,6 +14,7 @@ scale {
         border-radius: 100%;
       }
       highlight {
+        border-radius: 1em;
         background: colors.$accent-primary;
       }
     }
@@ -24,7 +25,7 @@ scale {
     mark {
       padding-top: 5px;
       indicator {
-        color: colors.$surface-moderate;
+        color: colors.$white-moderate;
         min-height: 8px;
         min-width: 1px;
       }

@@ -25,7 +25,7 @@ tabs {
     color: colors.$white-moderate;
 
     header &:checked {
-      border-color: color.change(colors.$accent-primary, $alpha: config.$tint-medium);
+      border-color: colors.$blue-normal;
       color: colors.$white-strong;
     }
 

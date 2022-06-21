@@ -9,8 +9,8 @@ list {
     background: colors.$surface-strong;
     padding: config.$spacing-medium;
     &:hover {
-      background: color.change(colors.$accent-light, $alpha: config.$tint-medium);
-      color: #343434;
+      background: colors.$surface-weakest;
+      color: colors.$white-strong;
     }
   }
 

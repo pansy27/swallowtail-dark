@@ -8,6 +8,7 @@ iconview {
   &:selected {
     color: colors.$white-strongest;
     background: colors.$accent-primary;
+    color: colors.$black-moderate;
     border-radius: 0.5em;
   }
 }

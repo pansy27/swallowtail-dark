@@ -7,11 +7,12 @@ scale {
 
     trough {
       background: colors.$white-weak;
+      border-radius: 1em;
       slider {
-        background: lighten(colors.$surface-moderate, 25%);
+        background: colors.$yellow-light;
         padding: 8px;
-        margin: -5px;
-        border-radius: 100%;
+        margin: -6px;
+        border-radius: 1em;
       }
       highlight {
         border-radius: 1em;

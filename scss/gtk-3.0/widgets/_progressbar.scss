@@ -1,11 +1,16 @@
 @use '../colors';
 
 progressbar {
-
   trough {
     background: colors.$white-weakest;
+     border-radius: 1em;
+     min-height: 6px;
+     min-width: 6px;
     progress {
-      background: colors.$accent-secondary;
+      background: colors.$yellow-light;
+      border-radius: 1em;
+      min-height: 6px;
+      min-width: 6px;
     }
   }
 }

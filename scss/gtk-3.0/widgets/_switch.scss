@@ -1,26 +1,30 @@
-@use 'sass:color';
 @use '../colors';
 @use '../config';
-
+@use 'sass:color';
 switch {
   background: colors.$white-weakest;
-  border-radius: 1em;
-  min-width: 3em;
-  border: config.$border-size solid transparent;
+  transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
+  margin: 6px 0;
+  border: config.$border-size solid colors.$accent-normal;
+  border-radius: 9999px;
+  background-clip: border-box;
 
   slider {
     background: colors.$white-moderate;
-    border-radius: 100%;
-    min-width: 1.5em;
-    min-height: 1.5em;
+    transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
+    min-width: 1em;
+    min-height: 1em;
+    margin: 2px;
+    border-radius: 9999px;
+    box-shadow: none;
   }
-
   :nth-child(2) { color: transparent; }
   :nth-child(3) { color: colors.$white-moderate; }
 
+
   &:checked {
-    background: color.change(colors.$accent-primary, $alpha: config.$tint-weak);
-    
+   background: color.change(colors.$accent-primary, $alpha: config.$tint-weak);
+
     slider {
       background: color.change(colors.$accent-primary, $alpha: config.$tint-strong);
     }
@@ -28,16 +32,24 @@ switch {
     :nth-child(2) { color: colors.$white-strong; }
     :nth-child(3) { color: transparent; }
   }
-
-  &:disabled { opacity: config.$disabled-opacity; }
+  &:disabled {
+    opacity:  config.$disabled-opacity;
+  }
 
   &:hover {
     slider {
       box-shadow: 0 0 0 config.$spacing-small colors.$white-weak;
     }
 
-    &:checked slider {
+  &:checked slider {
       box-shadow: 0 0 0 config.$spacing-small color.change(colors.$accent-primary, $alpha: config.$tint-weak);
     }
+    }  
+  image {
+   margin: -8px;
+    -gtk-icon-transform: scale(0);
   }
+
 }
+
+

@@ -3,7 +3,9 @@
 frame > border, .frame {
   border: 1px solid colors.$white-weakest;
 }
-
+frame {
+  color: colors.$white-strong;
+}
 scrolledwindow {
   viewport.frame {
     border-style: none;

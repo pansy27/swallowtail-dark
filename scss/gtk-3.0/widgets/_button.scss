@@ -15,12 +15,15 @@ button {
   &:checked, &.suggested-action {
     // tint medium(initially)
     background: color.change(colors.$accent-normal, $alpha: config.$tint-strong);
-    color: colors.$black-strong;
     &:hover:not(:active) {
       background: color.change(colors.$accent-light, $alpha: config.$tint-strong);
     }
   }
+  // temporary fix for text buttons as accent color is light
+  &.text-button:checked {
+    color: colors.$black-strong;
 
+  }
   &.image-button:not(.text-button) {
     padding: calc(config.$spacing-medium + 0.2em);
   }

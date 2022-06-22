@@ -8,14 +8,14 @@ Make sure to install the following dependency:
 Clone the swallowtail repository and build/install it using make
 
 ```bash
-git clone https://github.com/pansy27/swallowtail.git
-cd swallowtail
+git clone https://github.com/pansy27/swallowtail-dark.git
+cd swallowtail-dark
 make
 sudo make install
 ```
 Install its npm dependencies:
 ```bash
-cd ~/.local/share/themes/swallowtail
+cd ~/.local/share/themes/swallowtail-dark
 npm install
 ```
 
@@ -28,7 +28,7 @@ npm run build
 ### Watch
 Start a watcher that automatically builds when you modify a file:
 ```bash
-cd ~/.local/share/themes/swallowtail
+cd ~/.local/share/themes/swallowtail-dark
 npm run watch
 ```
 

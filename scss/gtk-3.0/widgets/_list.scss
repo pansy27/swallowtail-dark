@@ -8,6 +8,10 @@ list {
   row {
     background: colors.$surface-strong;
     padding: config.$spacing-medium;
+    &:selected {
+      background: colors.$accent-normal;
+      color: colors.$black-strong;
+    }
     &:hover {
       background: colors.$surface-weakest;
       color: colors.$white-strong;

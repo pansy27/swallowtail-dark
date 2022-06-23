@@ -9,8 +9,8 @@ list {
     background: colors.$surface-strong;
     padding: config.$spacing-medium;
     &:selected {
-      background: colors.$accent-normal;
-      color: colors.$black-strong;
+      background: rgba(colors.$accent-normal, config.$tint-weak);
+      color: colors.$white-strong;
     }
     &:hover {
       background: colors.$surface-weakest;

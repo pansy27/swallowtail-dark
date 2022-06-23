@@ -6,9 +6,8 @@ iconview {
   padding: 0.3em;
 
   &:selected {
-    color: colors.$white-strongest;
-    background: colors.$accent-primary;
-    color: colors.$black-moderate;
+    color: colors.$white-strong;
+    background: colors.$white-weak;
     border-radius: 0.5em;
   }
 }

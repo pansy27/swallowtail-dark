@@ -27,7 +27,7 @@ entry {
   }
 
   selection {
-    color: colors.$white-strong;
+    color: colors.$black-strong;
     background: color.change(colors.$accent-primary, $alpha: config.$tint-medium);
   }
 

@@ -15,9 +15,13 @@ button {
   &:checked, &.suggested-action {
     // tint medium(initially)
     background: color.change(colors.$accent-normal, $alpha: config.$tint-strong);
+//    color: colors.$black-strong;
     &:hover:not(:active) {
       background: color.change(colors.$accent-light, $alpha: config.$tint-strong);
     }
+  }
+  &.suggested-action {
+    color: colors.$black-strong;
   }
   // temporary fix for text buttons as accent color is light
   &.text-button:checked {

@@ -8,13 +8,9 @@ list {
   row {
     background: colors.$surface-strong;
     padding: config.$spacing-medium;
-    &:selected {
-      background: rgba(colors.$accent-normal, config.$tint-weak);
-      color: colors.$white-strong;
-    }
-    &:hover {
-      background: colors.$surface-weakest;
-      color: colors.$white-strong;
+    &:hover,&:selected {
+      background: colors.$accent-light;
+      color: colors.$black-strong;
     }
   }
 

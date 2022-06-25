@@ -8,6 +8,7 @@
 @use "entry";
 @use "expander";
 @use "frame";
+@use "flowbox";
 @use "headerbar";
 @use "iconview";
 @use "infobar";
@@ -18,6 +19,7 @@
 @use "menubar";
 @use "notebook";
 @use "overshoot";
+@use "overlay";
 @use "paned";
 @use "pathbar";
 @use "placessidebar";
@@ -39,5 +41,3 @@
 @use "tooltip";
 @use "treeview";
 @use "window";
-@use "overlay";
-@use "flowbox";

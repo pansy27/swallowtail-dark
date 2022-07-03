@@ -9,7 +9,17 @@ toolbar, .toolbar {
   &.osd {
     background: colors.$white-weakest;
     padding: config.$spacing-medium;
+    border: 2px solid colors.$white-strong;
     border-radius: config.$radius;
   }
-  
+  button, scale {
+    padding: 4px;
+  }
+  scale {
+    trough {
+      highlight {
+        background: colors.$accent-normal;
+      }
+    }
+    } 
 }

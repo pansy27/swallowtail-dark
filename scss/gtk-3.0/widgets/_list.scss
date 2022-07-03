@@ -8,12 +8,15 @@ list {
   row {
     background: colors.$surface-strong;
     padding: config.$spacing-medium;
-    &:hover,&:selected {
-      background: colors.$accent-light;
-      color: colors.$black-strong;
-     colorswatch {
+    &:hover {
+      background: transparentize(colors.$white-weak, 0.1);
+    /* colorswatch {
         border: 0.2em solid colors.$white-strong;
-  }
+   }*/
+    }
+    &:selected {
+      background: transparentize(colors.$accent-light, 0.5);
+      color: colors.$black-strong;
     }  
   }
 

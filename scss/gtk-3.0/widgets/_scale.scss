@@ -10,9 +10,10 @@ scale {
       border-radius: 1em;
       slider {
         background: colors.$yellow-light;
-        padding: 8px;
-        margin: -6px;
+        padding: 4px;
+        margin: -4px;
         border-radius: 1em;
+        border: 2px solid transparent;
       }
       highlight {
         border-radius: 1em;

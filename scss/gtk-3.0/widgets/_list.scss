@@ -11,7 +11,10 @@ list {
     &:hover,&:selected {
       background: colors.$accent-light;
       color: colors.$black-strong;
-    }
+     colorswatch {
+        border: 0.2em solid colors.$white-strong;
+  }
+    }  
   }
 
   > label {

@@ -22,4 +22,9 @@ menu {
       color: colors.$black-strong;
     }
   }
+  arrow {
+    min-height: 1.5em;
+    min-width: 1.5em;
+    -gtk-icon-source: -gtk-recolor(url("../assets/svg/arrow-right.svg"));
+  }
 }

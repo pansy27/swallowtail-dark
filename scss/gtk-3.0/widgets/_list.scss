@@ -15,7 +15,8 @@ list {
    }*/
     }
     &:selected {
-      background: transparentize(colors.$accent-light, 0.5);
+      // background: transparentize(colors.$accent-light, 0.5);
+      background: colors.$accent-normal;
       color: colors.$black-strong;
     }  
   }

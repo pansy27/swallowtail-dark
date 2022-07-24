@@ -15,6 +15,15 @@ toolbar, .toolbar {
   button, scale {
     padding: 4px;
   }
+  button {
+    label {
+      margin-right: 3px;
+      margin-left: 3px;
+    }
+    image {
+      margin: auto;
+    }
+  }
   scale {
     trough {
       highlight {

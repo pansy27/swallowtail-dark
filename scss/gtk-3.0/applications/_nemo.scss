@@ -5,6 +5,10 @@
 .nemo-window {
   .nemo-places-sidebar {
     background: colors.$surface-strong;
+    :selected {
+      background: colors.$accent-normal;
+      color: colors.$black-strongest;
+    }
   }
 
   .primary-toolbar {
@@ -24,7 +28,9 @@
 
   .nemo-window-pane {
     :selected {
-      background: color.change(colors.$accent-primary, $alpha: config.$tint-medium);
+      // background: color.change(colors.$accent-primary, $alpha: config.$tint-medium);
+      background: colors.$accent-normal;
+      color: colors.$black-strongest;
     }
     :active {
       background: color.change(colors.$accent-primary, $alpha: config.$tint-medium);

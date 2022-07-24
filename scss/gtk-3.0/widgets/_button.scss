@@ -23,13 +23,21 @@ button {
   &.suggested-action {
     color: colors.$black-strong;
   }
+  &.link {
+    label {
+      text-decoration: underline colors.$accent-normal wavy;
+  }
+}
   // temporary fix for text buttons as accent color is light
   &.text-button:checked {
     color: colors.$black-strong;
-
   }
   &.image-button:not(.text-button) {
     padding: calc(config.$spacing-medium + 0.2em);
+    &:active, &:checked {
+      background: colors.$accent-normal;
+      color: colors.$black-strong;
+    }
   }
 
   &.destructive-action {
@@ -51,12 +59,15 @@ button {
       background: colors.$white-weakest;
     }
     &:active, &:checked {
-      background: colors.$white-weak;
+      // background: colors.$white-weak;
+      background: colors.$accent-normal;
+      color: colors.$black-strong;
     }
   }
 
   label + & {
     margin-left: config.$spacing-medium;
+    margin-right: config.$spacing-medium;
   }
 
   &.small-button {

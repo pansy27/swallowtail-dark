@@ -19,8 +19,8 @@ treeview {
   }
 
   &:selected {
-    background: color.change(colors.$accent-primary, $alpha: config.$tint-medium);
-    color: colors.$white-strongest;
+    background: color.change(colors.$accent-normal, $alpha: config.$tint-strong);
+    color: colors.$black-strongest;
   }
 
   header { 

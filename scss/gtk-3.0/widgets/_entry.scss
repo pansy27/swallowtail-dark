@@ -7,6 +7,7 @@ entry {
   border-radius: config.$radius;
   border: config.$border-size solid colors.$white-weakest;
   background: colors.$white-weakest;
+  color: colors.$white-strongest;
   background-clip: padding-box;
 
   &:focus {

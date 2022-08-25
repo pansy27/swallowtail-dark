@@ -5,15 +5,35 @@
 .nemo-window {
   .nemo-places-sidebar {
     background: colors.$surface-strong;
-    :selected {
-      background: colors.$accent-normal;
-      color: colors.$black-strongest;
+      &.frame {
+        border: none;
+      }
+ }
+
+  // removes the ugly margin around statusbar at bottom
+  statusbar {
+    frame {
+      border {
+        margin: -2px;
+      }
     }
   }
 
   .primary-toolbar {
     background: colors.$surface-moderate;
     padding: config.$spacing-small;
+  }
+
+ .places-treeview {
+    -NemoPlacesTreeView-disk-full-bg-color: colors.$white-weakest;
+    -NemoPlacesTreeView-disk-full-fg-color: colors.$red-normal;
+    // -NemoPlacesTreeView-disk-full-bar-width: 2px;
+    // -NemoPlacesTreeView-disk-full-bar-radius: 1px;
+    // -NemoPlacesTreeView-disk-full-bottom-padding: 1px;
+    -NemoPlacesTreeView-disk-full-bottom-padding: -2px;
+    // -NemoPlacesTreeView-disk-full-max-length: 70px;
+    // Changes the spacing b/w entries in sidebar
+    -GtkTreeView-vertical-separator: 10;
   }
 
   menubar ~ separator {
@@ -26,6 +46,11 @@
     margin: -0.1em;
   }
 
+  // Removes the annoying separator
+  grid > paned > separator {
+    background-image: none;
+  }
+
   .nemo-window-pane {
     :selected {
       // background: color.change(colors.$accent-primary, $alpha: config.$tint-medium);
@@ -36,4 +61,9 @@
       background: color.change(colors.$accent-primary, $alpha: config.$tint-medium);
     }
   }
+  /* Styles the expander on lhs
+  .view {
+    &.expander {
+    }
+  */
 }

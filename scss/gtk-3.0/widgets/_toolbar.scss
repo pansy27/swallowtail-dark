@@ -4,7 +4,7 @@
 toolbar, .toolbar {
   background: colors.$surface-strong;
   color: colors.$black-strong;
-  padding: config.$spacing-medium;
+  padding: config.$spacing-small;
 
   &.osd {
     background: colors.$white-weakest;
@@ -12,18 +12,18 @@ toolbar, .toolbar {
     border: 2px solid colors.$white-strong;
     border-radius: config.$radius;
   }
-  button, scale {
-    padding: 4px;
-  }
-  button {
-    label {
-      margin-right: 3px;
-      margin-left: 3px;
-    }
-    image {
-      margin: auto;
-    }
-  }
+  // button, scale {
+  //   padding: 4px;
+  // }
+  // button {
+  //   label {
+  //     margin-right: 3px;
+  //     margin-left: 3px;
+  //   }
+  //   image {
+  //     margin: auto;
+  //   }
+  // }
   scale {
     trough {
       highlight {

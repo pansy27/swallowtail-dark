@@ -35,8 +35,9 @@ dialog, messagedialog {
     }
   }
   }
+
 button {
-      margin: 0em 0.3em 0.3em 0.3em;
+      // margin: 0em 0.3em 0.3em 0.3em; // removed cause it introduces undesired padding in pathbar buttons
       border: none;
       background: colors.$white-weakest;
       transition: background 170ms ease-out;

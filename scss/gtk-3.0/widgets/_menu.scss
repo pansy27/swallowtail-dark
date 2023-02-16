@@ -4,12 +4,13 @@
 menu {
   background: colors.$surface-weak;
   border-radius: 3px;
-  border: 2px solid colors.$accent-light;
+  // border: 2px solid colors.$accent-light; // looks ugly ;-;
+  border: 2px solid transparent;
   padding: 4px;
   menuitem {
-    padding: config.$spacing-small;
+    padding: calc(config.$spacing-small - 0.03em);
     &:hover {
-      background: colors.$yellow-normal;
+      background: transparentize(colors.$accent-normal, 0.3);
       color: colors.$black-strong;
     }
   }

@@ -37,7 +37,7 @@ button {
     padding: calc(config.$spacing-medium + 0.2em);
     &:active, &:checked {
       background: colors.$accent-normal;
-      color: colors.$black-strong;
+      // color: colors.$black-strong;
     }
   }
 
@@ -49,7 +49,7 @@ button {
     }
   }
 
-// nautilus key shortcuts window
+// nautilus shortcuts window
   &.circular {
     border-radius: 100%;
     // padding: calc(config.$spacing-medium + 0.2em);
@@ -64,7 +64,7 @@ button {
     }
     &:active, &:checked {
       // background: colors.$white-weak;
-      background: colors.$accent-normal;
+      background: transparentize(colors.$accent-normal, 0.7); //fixes blinding buttons
       color: colors.$black-strong;
     }
   }

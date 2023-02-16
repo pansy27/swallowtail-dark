@@ -9,7 +9,7 @@ treeview {
   -GtkTreeView-grid-line-pattern: '';
   -GtkTreeView-tree-line-pattern: '';
   -GtkTreeView-horizontal-separator: 12;
-  -GtkTreeView-vertical-separator: 12;
+  -GtkTreeView-vertical-separator: 5; // fixes treeview vertical padding b/w items
 
   border-left-color: colors.$white-weakest; // TODO: check if there is going to be a new way to define tree-lines
   border-top-color: colors.$white-weakest; // TODO: check if there is going to be a new way to define column-lines

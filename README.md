@@ -13,6 +13,7 @@ cd swallowtail-dark
 make
 sudo make install
 ```
+## Development
 Install its npm dependencies:
 ```bash
 cd ~/.local/share/themes/swallowtail-dark
